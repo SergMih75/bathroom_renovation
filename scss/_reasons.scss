@@ -1,0 +1,130 @@
+.reasons {
+    width: 89%;
+    margin: 0 auto;
+    padding: 89px 8.9% 42px 9%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: $reasonsBg;
+
+    &__title {
+        margin-bottom: 40px;
+
+        font-family: $fontThree;
+        font-size: 17px;
+        font-weight: 400;
+        color: $textColorSecond;
+
+        text-transform: uppercase;
+    }
+
+    &__text {
+        width: 100%;
+        padding-bottom: 70px;
+        margin-bottom: 70px;
+
+        border-bottom: 1px solid $linkHover;
+
+        font-family: $fontSecond;
+        font-size: 3.29775vw;
+        font-weight: 400;
+
+        color: $textColorFour;
+    }
+}
+
+.advantages {
+    width: 100%;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 175px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &-title {
+            margin-bottom: 14px;
+
+            font-family: $fontSecond;
+            font-size: 40px;
+            font-weight: 400;
+            color: $textColorFour;
+        }
+
+        &-text {
+            font-family: $fontThree;
+            font-size: 18px;
+            font-weight: 400;
+            color: $textColorThree;
+        }
+
+        &-text span {
+            font-weight: 900;
+        }
+    }
+}
+
+.application-popup-link {
+    font-size: $fontThree;
+    font-size: 18px;
+    font-weight: 500;
+    color: $popUpLink;
+    animation: popupLink 600ms  infinite;
+    -webkit-animation: popupLink 600ms  infinite;
+}
+
+@keyframes popupLink {
+    0% {
+        text-shadow: 0 0 0 $popUpLink;
+    }
+    50% {
+        text-shadow: 0 0 10px $popUpLink;
+    }
+    100% {
+        text-shadow: 0 0 0 $popUpLink;
+    }
+}
+
+@media (max-width:320px) {
+    .reasons {
+        width: 100%;
+        padding: 100px 17px 28px 17px;
+    }
+
+    .reasons__title {
+        margin-bottom: 35px;
+
+        font-size: 13px;
+    }
+
+    .reasons__text {
+        font-size: 25px;
+    }
+
+    .advantages {
+        row-gap: 31px;
+
+        &__item {
+        width: 127px;
+
+            &-title {
+                font-size: 24px;
+            }
+
+            &-text {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .application-popup-link {
+    font-size: 14px;
+}
+}
